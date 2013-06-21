@@ -15,7 +15,7 @@ folder. If you don't get it yet, take a look at the ``context`` folder of the re
 
 Example content:
 
-```ini
+```
 Origin: Your project name
 Label: Your project name
 Codename: <osrelease>
@@ -34,7 +34,7 @@ SignWith: <key-id>
 
 Example content:
 
-```ini
+```
 verbose
 basedir /var/www/repos/apt/debian
 ask-passphrase
@@ -44,7 +44,7 @@ ask-passphrase
 
 ##### /var/www/repos/apt/debian/conf/override
 
-```ini
+```
 your_package_name Priority        optional
 your_package_name Section         net
 ```
@@ -57,7 +57,7 @@ your_package_name Section         net
 ``debian-docker-repository`` sets up an nginx service which obviously needs a vhost to serve your packages correctly.
 Here's an example of a debian repository compatible nginx vhost:
 
-```ini
+```apache
 server {
   listen 80;
   server_name <hostname>;
@@ -88,7 +88,7 @@ As a default ``docker-debian-repository`` will update the container ssh configur
 user. Feel free to use your own.
 Here's the default as a reference:
 
-```ini
+```ssh
 # Package generated configuration file
 # See the sshd_config(5) manpage for details
 

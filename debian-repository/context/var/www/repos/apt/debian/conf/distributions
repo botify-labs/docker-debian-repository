@@ -1,0 +1,9 @@
+Origin: <your repository name>
+Label: <your repository name>
+Codename: <your repository reference distribution>
+Architectures: i386 amd64
+Components: main
+Description: <Apt respository for project x>
+DebOverride: override.<osrelease>
+DscOverride: override.<osrelease>
+SignWith: <key-id>

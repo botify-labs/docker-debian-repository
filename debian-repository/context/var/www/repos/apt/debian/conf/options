@@ -1,0 +1,3 @@
+verbose
+basedir /var/www/repos/apt/debian
+ask-passphrase
